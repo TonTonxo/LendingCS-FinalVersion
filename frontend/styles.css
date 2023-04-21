@@ -1,15 +1,31 @@
-.container-fluid {
-  min-height: 100vh;
-  max-height: 100vh;
+html,
+body {
+  height: 100%;
+}
+.flex-container {
+  height: 33%;
+}
+.header {
+  height: 174px;
+  background: url("/frontend/Image/Group\ 14.png");
+  background-size: cover;
+}
+
+.footer {
+  height: 159px;
+  background: url("/frontend/Image/Group\ 15.png");
+  background-size: cover;
 }
 
 .bg-login {
-  background: url("https://images.pexels.com/photos/2603464/pexels-photo-2603464.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")
-    no-repeat center;
-  background-size: cover;
-  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  height: 57.5vh;
 }
 
+.bg-login .body-content {
+  padding-bottom: 100px;
+}
 h1 {
   font-size: 50px !important;
   background: rgba(0, 0, 0, 0.8);
@@ -27,11 +43,6 @@ h4 {
   font-family: "Raleway", sans-serif;
   text-align: center;
   padding-bottom: 20px;
-}
-
-.login-area {
-  background-color: #fff;
-  height: 100vh;
 }
 
 .input-group-text i {
@@ -56,15 +67,35 @@ button {
 
 .content,
 form {
-  position: relative;
-  top: 20vh;
-  padding: 0 30px;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
-form {
-  top: 30vh;
+form .button-flex {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
 }
 
+form .button-flex .div-divider {
+  margin-left: 100px;
+}
+
+form .button-flex .first-button {
+  padding: 10px 10px 10px 10px;
+  border-color: black;
+  border-radius: 10px;
+  background-color: #094978;
+}
+
+form .button-flex .second-button {
+  padding: 10px 10px 10px 10px;
+  border-color: black;
+  border-radius: 10px;
+  background-color: #7f3800;
+}
 .content .brand {
   margin-bottom: 20px;
   color: #fff;
@@ -75,7 +106,7 @@ a {
 }
 
 a:visited {
-  color: white;
+  color: white !important;
 }
 
 @media (min-width: 300px) and (max-width: 12000px) {
